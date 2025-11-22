@@ -50,9 +50,8 @@ def fetch_doctors():
     out = {}
     for d in docs:
         data = d.to_dict()
-        out[data["name"]] = data.get("password", "1234")
-    return out
-
+*****************************************
+*****************************************
 # -------------------------------------------------------------
 #                  FETCH PATIENT DATA
 # -------------------------------------------------------------
@@ -187,3 +186,4 @@ for _, row in df_final.iterrows():
         st.success("Saved!")
 
     st.markdown("</div>", unsafe_allow_html=True)
+
