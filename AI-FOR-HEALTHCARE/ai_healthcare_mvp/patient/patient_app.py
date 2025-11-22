@@ -76,8 +76,8 @@ DEPARTMENT_DOCTORS = {
 
 
 # Firebase init (Using local file path as requested)
-cred_path = os.path.join(os.path.dirname(__file__), "..", "firebase_config", "serviceAccountKey.json")
-if not os.path.exists(cred_path):
+*******************************************
+****************:
     st.error("Firebase key not found: " + cred_path)
     # st.stop() # Commenting out stop to allow the rest of the UI to load
     db = None
@@ -364,4 +364,5 @@ if st.button("Check My Latest AI Summary", key="ai_summary_check"):
             st.error(f"Error computing AI: {e}") 
 
 # --- Chatbot Display ---
+
 patient_chatbot()
